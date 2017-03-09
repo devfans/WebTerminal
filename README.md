@@ -1,6 +1,6 @@
-# tty.js
+# WebTerminal
 
-A terminal in your browser using node.js and socket.io. Based onhttps://github.com/chjj/tty.js/. Modified to use shared session for collaboration. Mutiple users can view and execute commands being typed and executed at same time.
+A terminal in your browser using node.js and socket.io. Based on https://github.com/chjj/tty.js/. Modified to use shared session for collaboration. Mutiple users can view and execute commands being typed and executed at same time.
 
 
 # Features
@@ -128,7 +128,7 @@ not implemented fully. `TERM` should render everything fine when set to
 
 ## Portability
 
-tty.js should ultimately be able to work on any unix that implements unix98
+WebTerminal should ultimately be able to work on any unix that implements unix98
 tty's and `forkpty(3)`. tty.js builds on linux and osx, and it *should* build
 on NetBSD, FreeBSD, and OpenBSD as well. If you have trouble building, please
 post an issue.
