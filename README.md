@@ -1,31 +1,10 @@
 # tty.js
 
-A terminal in your browser using node.js and socket.io. Based on Fabrice
-Bellard's vt100 for [jslinux](http://bellard.org/jslinux/).
+A terminal in your browser using node.js and socket.io. Based onhttps://github.com/chjj/tty.js/. Modified to use shared session for collaboration. Mutiple users can view and execute commands being typed and executed at same time.
 
-For the standalone web terminal, see
-[**term.js**](https://github.com/chjj/term.js).
 
-For the lowlevel terminal spawner, see
-[**pty.js**](https://github.com/chjj/pty.js).
+# Features
 
-## Screenshots
-
-### irssi
-
-![](http://i.imgur.com/wqare.png)
-
-### vim & alsamixer
-
-![](http://i.imgur.com/Zg1Jq.png)
-
-### bash
-
-![](http://i.imgur.com/HimZb.png)
-
-## Features
-
-- Tabs, Stacking Windows, Maximizable Terminals
 - Screen/Tmux-like keys (optional)
 - Ability to efficiently render programs: vim, mc, irssi, vifm, etc.
 - Support for xterm mouse events
@@ -35,7 +14,9 @@ For the lowlevel terminal spawner, see
 ## Install
 
 ``` bash
-$ npm install tty.js
+$ git clone repo_url
+$ npm install 
+$ node bin/tty.js
 ```
 
 ## Usage
@@ -152,16 +133,6 @@ tty's and `forkpty(3)`. tty.js builds on linux and osx, and it *should* build
 on NetBSD, FreeBSD, and OpenBSD as well. If you have trouble building, please
 post an issue.
 
-## Todo
-
-The distance to go before full xterm compatibility.
-
-- VT52 codes for compatibility
-- All vt400 rectangle sequences
-- Remaining DEC private modes
-- Miscellaneous sequences: cursor shape, window title
-- Origin Mode, Insert Mode
-- Proper Tab Setting
 
 ## Contribution and License Agreement
 
@@ -171,6 +142,6 @@ all code is your original work. `</legalese>`
 
 ## License
 
-Copyright (c) 2012-2014, Christopher Jeffrey (MIT License)
+Copyright (c) 2012-2017, Stefan Liu (MIT License)
 
 [1]: http://invisible-island.net/xterm/ctlseqs/ctlseqs.html#Mouse%20Tracking
